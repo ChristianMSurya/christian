@@ -14,6 +14,9 @@ export default function Home() {
               <p id="family" className="opacity-0 transition-opacity duration-300">is what my family calls me</p>
             </div>
           </div>
+          <div className="h-16">
+
+          </div>
           {/* <div id="down-arrow" 
             className={`flex items-center justify-center transition-opacity duration-300 h-16 ${showArrow ? 'opacity-100' : 'opacity-0'}`}
           >
