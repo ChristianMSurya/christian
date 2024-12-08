@@ -1,10 +1,11 @@
-export default function Home() {
+'use client';
 
+export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen scroll-smooth items-center justify-center font-[family-name:var(--font-geist-sans)]">
         <section className="flex w-full min-h-screen flex-col justify-between items-center">
           <div className="h-16"></div>
-          <div className="flex flex-row w-full justify-center items-center gap-1">
+          <div className="flex flex-row w-full justify-center items-center gap-1 animate-fade-in">
             <div id="first-name" className="flex flex-row w-full items-center justify-end py-2 gap-1">
               <p id="friends" className="opacity-0 transition-opacity duration-300">my friends call me</p>
               <p id="christian" className="cursor-pointer transition-opacity duration-300">christian</p>
@@ -14,14 +15,7 @@ export default function Home() {
               <p id="family" className="opacity-0 transition-opacity duration-300">is what my family calls me</p>
             </div>
           </div>
-          <div className="h-16">
-
-          </div>
-          {/* <div id="down-arrow" 
-            className={`flex items-center justify-center transition-opacity duration-300 h-16 ${showArrow ? 'opacity-100' : 'opacity-0'}`}
-          >
-            <ChevronDown size={24} />
-          </div> */}
+          <div className="h-16"></div>
         </section>
         {/* <section ref={secondSectionRef} className="flex flex-col items-center justify-center min-h-screen w-full">
           <h2>Second Section</h2>
