@@ -22,7 +22,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="opacity-50 hover:opacity-100 transition-opacity duration-300"
             >
-              LinkedIn
+              linkedin
             </a>
             <span className="opacity-50">|</span>
             <a 
@@ -31,7 +31,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="opacity-50 hover:opacity-100 transition-opacity duration-300"
             >
-              Twitter
+              twitter
             </a>
           </div>
         </section>
