@@ -15,7 +15,25 @@ export default function Home() {
               <p id="family" className="opacity-0 transition-opacity duration-300">is what my family calls me</p>
             </div>
           </div>
-          <div className="h-16"></div>
+          <div className="flex gap-2 text-sm mb-8 animate-fade-in">
+            <a 
+              href="https://linkedin.com/in/christianmatthewnd" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            >
+              LinkedIn
+            </a>
+            <span className="opacity-50">|</span>
+            <a 
+              href="https://x.com/christianmsurya" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            >
+              Twitter
+            </a>
+          </div>
         </section>
         {/* <section ref={secondSectionRef} className="flex flex-col items-center justify-center min-h-screen w-full">
           <h2>Second Section</h2>
