@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen scroll-smooth items-center justify-center font-[family-name:var(--font-geist-sans)]">
-        <section className="flex w-full min-h-screen flex-col justify-between items-center">
+    <div className="flex flex-col w-full h-screen scroll-smooth items-center justify-center font-[family-name:var(--font-geist-sans)]">
+        <section className="flex w-full h-screen min-h-screen flex-col justify-between items-center">
           <div className="h-16"></div>
           <div className="flex flex-row w-full justify-center items-center gap-1 animate-fade-in">
             <div id="first-name" className="flex flex-row w-full items-center justify-end py-2 gap-1">
