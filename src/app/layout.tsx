@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 const berkeley = localFont({
-  src: "./fonts/TX-02-TRIAL-Regular.otf",
+  src: "./fonts/berkeley.otf",
   display: 'swap',
   variable: "--font-berkeley",
 })
