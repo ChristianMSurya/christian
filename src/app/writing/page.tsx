@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Writing() {
   return (
-    <div className="flex flex-col w-full h-screen scroll-smooth items-center justify-center font-berkeley">
+    <div className="flex flex-col w-full h-screen scroll-smooth items-center justify-center">
       <section className="flex w-[800px] h-[75%] flex-col justify-between items-start animate-fade-in">
         <div className="flex flex-row gap-12">
           <Link href="/" className="cursor-pointer text-sm opacity-40 hover:opacity-100 transition-opacity duration-300">
@@ -20,7 +20,7 @@ export default function Writing() {
 
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-1">
-            <p className="text-sm">Coming soon.</p>
+            <p className="text-sm">coming soon</p>
           </div>
         </div>
 

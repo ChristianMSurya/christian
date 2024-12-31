@@ -14,12 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const berkeley = localFont({
-  src: "./fonts/berkeley.otf",
-  display: 'swap',
-  variable: "--font-berkeley",
-})
-
 export const metadata: Metadata = {
   title: "Christian Matthew",
   description: "I'm Christian Matthew, and this is my personal website.",
@@ -33,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${berkeley.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-geist-mono antialiased`}
       >
         <ThemeProvider>
           {children}

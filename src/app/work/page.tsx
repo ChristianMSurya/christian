@@ -37,7 +37,7 @@ export default function Work() {
   ];
 
   return (
-    <div className="flex flex-col w-full h-screen scroll-smooth items-center justify-center font-berkeley">
+    <div className="flex flex-col w-full h-screen scroll-smooth items-center justify-center">
       <section className="flex w-[800px] h-[75%] flex-col justify-between items-start animate-fade-in">
         <div className="flex flex-row gap-12">
           <Link href="/" className="cursor-pointer text-sm opacity-40 hover:opacity-100 transition-opacity duration-300">
