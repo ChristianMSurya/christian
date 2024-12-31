@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { ThemeProvider } from "./context/theme-provider";
 import Navbar from "@/components/navbar";
+import SwipeNavigation from "@/components/swipe-navigation";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -30,16 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-geist-mono antialiased`}
       >
-        <ThemeProvider>
           <div className="flex flex-col px-8 w-full min-h-screen items-center justify-start">
             <div className="flex flex-col w-full max-w-[800px] gap-12">
               <div className="mt-24">
                 <Navbar/>
               </div>
+              <SwipeNavigation>
                 {children}
+              </SwipeNavigation>
             </div>
           </div>
-        </ThemeProvider>
       </body>
     </html>
   );
