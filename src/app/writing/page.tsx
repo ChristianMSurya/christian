@@ -1,7 +1,5 @@
 'use client';
 
-import Link from "next/link";
-
 export default function Writing() {
   return (
     <div className="flex flex-col w-full h-full scroll-smooth items-center justify-center animate-fade-in">
