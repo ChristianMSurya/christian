@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        berkeley: ["var(--font-berkeley)"],
+        'geist-mono': ["var(--font-geist-mono)"],
+        'geist-sans': ["var(--font-geist-sans)"],
+      },
     },
   },
   plugins: [],
