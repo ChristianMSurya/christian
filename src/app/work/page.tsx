@@ -1,37 +1,50 @@
 'use client';
 import Footer from "@/components/footer";
 import { ArrowUpRight } from "lucide-react";
+import Link from 'next/link';
 
 export default function Work() {
   const projects = [
     {
+      name: "EXPLORING",
+      details: "Present",
+      description: "",
+      link: "/writing"
+    },
+    {
       name: "FIREFLY",
-      description: "Currently in development, backed by Tim Connors.",
+      details: "Cofounder / Mar 2024 - Nov 2024",
+      description: "",
       link: "https://www.tryfirefly.ai"
     },
     {
       name: "COMMSOR",
-      description: "Turning your network into warm sales leads.",
+      details: "Chief of Staff / Aug 2023 - Jan 2024",
+      description: "",
       link: "https://www.commsor.com"
     },
     {
       name: "SUBSET",
-      description: "A modern spreadsheet for macOS.",
+      details: "Growth / Jan 2023 - May 2023",
+      description: "",
       link: "https://subset.so"
     },
     {
       name: "GATHER",
-      description: "Catholic dating app.",
+      details: "Growth / Aug 2022 - Jan 2023",
+      description: "",
       link: "https://www.linkedin.com/company/comegather/"
     },
     {
       name: "FRONTIDA RECORDS",
-      description: "EHRs for refugee camps and non-profits.",
+      details: "Head of Marketing / Sep 2021 - Sep 2022",
+      description: "",
       link: "https://www.frontidarecords.org"
     },
     {
       name: "GENUNITY",
-      description: "Activating community leaders in Boston.",
+      details: "Generalist / Sep 2021 - Aug 2022",
+      description: "",
       link: "https://genunity.org"
     }
   ];
@@ -41,21 +54,37 @@ export default function Work() {
         <div className="flex flex-col w-full min-h-[50vh] mt-10 scroll-smooth items-start justify-center animate-fade-in relative">
             <div className="flex flex-col gap-12 overflow-y-auto max-h-full">
                 {projects.map((project, index) => (
-                <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={index} 
-                    className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-[6px]"
-                    style={{ animationDelay: `${index * 70}ms` }}
-                >
-                    <div className="flex flex-row items-start">
-                      <h2 className="text-sm">{project.name}</h2>
-                      <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition group-hover:translate-y-[-2px] group-hover:translate-x-[2px] duration-300 ease-in-out" />
-                    </div>
-                    <p className="text-sm opacity-40">{project.description}</p>
-                    
-                </a>
+                project.link.startsWith('http') ? (
+                    <a 
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={index} 
+                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-[6px]"
+                        style={{ animationDelay: `${index * 70}ms` }}
+                    >
+                        <div className="flex flex-row items-start">
+                          <h2 className="text-sm">{project.name}</h2>
+                          <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition group-hover:translate-y-[-2px] group-hover:translate-x-[2px] duration-300 ease-in-out" />
+                        </div>
+                        <p className="text-sm opacity-40">{project.details}</p>
+                        {/* <p className="text-sm opacity-40 mt-2">{project.description}</p> */}
+                    </a>
+                ) : (
+                    <Link 
+                        href={project.link}
+                        key={index} 
+                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-[6px]"
+                        style={{ animationDelay: `${index * 70}ms` }}
+                    >
+                        <div className="flex flex-row items-start">
+                            <h2 className="text-sm">{project.name}</h2>
+                            <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition group-hover:translate-y-[-2px] group-hover:translate-x-[2px] duration-300 ease-in-out" />
+                        </div>
+                        <p className="text-sm opacity-40">{project.details}</p>
+                        {/* <p className="text-sm opacity-40 mt-2">{project.description}</p> */}
+                    </Link>
+                )
                 ))}
             </div>
         </div>
