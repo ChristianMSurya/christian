@@ -12,6 +12,7 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
@@ -34,6 +35,27 @@ body {
   }
 }
 
+@keyframes waterfallFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.5s ease-in forwards;
+}
+
+.waterfall-item {
+  opacity: 0;
+  animation: waterfallFadeIn 0.5s ease-in-out forwards;
+}
+
+.footer-fade-in {
+  opacity: 0;
+  animation: footerFadeIn 0.5s ease-in-out forwards;
 }

@@ -32,13 +32,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} font-geist-mono antialiased`}
       >
         <ThemeProvider>
-          <div className="flex flex-col h-screen items-center justify-center">
-            <div className="flex flex-col h-screen w-full px-10 gap-12 max-w-[800px] items-start justify-center">
-              <Navbar/>
-              <div className="h-[60%]">
-                {children}
+          <div className="flex flex-col px-8 w-full min-h-screen items-center justify-start">
+            <div className="flex flex-col w-full max-w-[800px] gap-12">
+              <div className="mt-24">
+                <Navbar/>
               </div>
-              <Footer/>
+                {children}
+              {/* <div className="mb-24">
+                <Footer/>
+              </div> */}
             </div>
           </div>
         </ThemeProvider>
