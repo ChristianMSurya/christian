@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { ThemeProvider } from "./context/theme-provider";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -12,6 +13,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const berkeley = localFont({
+  src: "./fonts/TX-02-TRIAL-Regular.otf",
+  variable: "--font-berkeley",
+})
 
 export const metadata: Metadata = {
   title: "Christian Matthew",
@@ -26,10 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${berkeley.variable} antialiased`}
       >
-        {/* <Nav /> */}
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
