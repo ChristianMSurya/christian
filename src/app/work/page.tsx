@@ -60,7 +60,7 @@ export default function Work() {
                         target="_blank"
                         rel="noopener noreferrer"
                         key={index} 
-                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-[6px]"
+                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-1"
                         style={{ animationDelay: `${index * 70}ms` }}
                     >
                         <div className="flex flex-row items-start">
@@ -74,7 +74,7 @@ export default function Work() {
                     <Link 
                         href={project.link}
                         key={index} 
-                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-[6px]"
+                        className="flex flex-col gap-1 waterfall-item group cursor-pointer gap-1"
                         style={{ animationDelay: `${index * 70}ms` }}
                     >
                         <div className="flex flex-row items-start">

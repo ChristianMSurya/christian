@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
     <div className="flex flex-col w-full min-h-[50vh] scroll-smooth items-start justify-center animate-fade-in">
-        <div className="flex flex-col text-sm gap-[6px]">
+        <div className="flex flex-col text-sm gap-1">
           <p>christian matthew</p>
           <p className="opacity-40">figuring out what to work on next</p>
         </div>
