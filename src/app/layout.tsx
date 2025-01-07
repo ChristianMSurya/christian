@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/navbar";
 import SwipeNavigation from "@/components/swipe-navigation";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
               </div>
               <SwipeNavigation>
                 {children}
+                <Analytics/>
               </SwipeNavigation>
             </div>
           </div>
