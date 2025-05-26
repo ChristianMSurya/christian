@@ -7,7 +7,7 @@ export default function Work() {
   const projects = [
     {
       name: "SANTÉ",
-      details: "Growth / January 2024 - Present",
+      details: "Growth / Jan 2024 - Present",
       description: "",
       link: "https://www.santehq.com/"
     },
