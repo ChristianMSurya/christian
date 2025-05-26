@@ -6,10 +6,10 @@ import Link from 'next/link';
 export default function Work() {
   const projects = [
     {
-      name: "EXPLORING",
-      details: "Present",
+      name: "SANTÉ",
+      details: "Growth / January 2024 - Present",
       description: "",
-      link: "/writing"
+      link: "https://www.santehq.com/"
     },
     {
       name: "FIREFLY",
