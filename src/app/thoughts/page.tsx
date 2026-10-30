@@ -7,7 +7,7 @@ const thoughts = [
   {
     title: 'first thought',
     date: 'october 29, 2026',
-    paragraphs: ['looking forward to getting sleep'],
+    paragraphs: ["can't wait to get sleep"],
   },
 ];
 
