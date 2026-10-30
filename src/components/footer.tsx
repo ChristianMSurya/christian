@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <div className="flex gap-8 text-sm">
+    <div className="flex gap-[1ch] text-sm">
       <a
         href="https://linkedin.com/in/christianmatthewnd"
         target="_blank"
