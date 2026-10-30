@@ -7,7 +7,7 @@ const routes = ['/', '/work', '/thoughts', '/christina'];
 
 export default function SwipeNavigation({ children }: { children: React.ReactNode }) {
   const router = useRouter();
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, "") || "/";
 
   const getCurrentIndex = () => routes.indexOf(pathname);
 
