@@ -110,3 +110,7 @@ body {
 @media (max-width: 400px) {
   .number-navigation, .name-screenshots { --number-gap: 32px; }
 }
+
+@media (max-width: 600px) {
+  .home-return-prefix { right: auto; left: 0; top: -24px; }
+}
