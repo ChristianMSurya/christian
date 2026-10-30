@@ -98,7 +98,7 @@ body {
 .home-return-message { visibility: visible; position: absolute; top: 0; left: 0; white-space: nowrap; }
 .home-return-prefix { position: absolute; right: 100%; white-space: pre; }
 
-.home-return-message { opacity: 1; transition: opacity 750ms ease-in; }
+.home-return-message { opacity: 1; transition: opacity 600ms ease-in; }
 .home-return-message.home-return-fading { opacity: 0; }
 .home-revealing [data-return-reveal] { animation: fadeIn 750ms ease-out both; }
 
