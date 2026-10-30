@@ -76,8 +76,8 @@ export default function Thoughts() {
           const title = <AnText>{thought.title}</AnText>;
           return (
             <article className="thought" key={thought.title}>
-              <h2>{title}</h2>
-              <span>{number} / {thought.date}</span>
+              <h2>{number} / {title}</h2>
+              <span>{thought.date}</span>
               <div className="thought-body">
                 {thought.paragraphs.map((paragraph) => <p key={paragraph}><AnText>{paragraph}</AnText></p>)}
               </div>

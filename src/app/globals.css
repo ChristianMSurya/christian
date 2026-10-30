@@ -62,7 +62,8 @@ body {
 .an-highlight { color: #fff !important; }
 
 .site-link { color: #555555; }
-.nav-link { color: #4d4d4d; transition: color 250ms; }
+.nav-link { position: relative; color: #4d4d4d; transition: color 250ms; }
+.nav-link::before { content: ""; position: absolute; width: 44px; height: 44px; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .nav-link:hover, .nav-link:focus-visible { color: #666666; }
 .nav-link.site-link-active { color: #777777; }
 
