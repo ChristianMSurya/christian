@@ -114,3 +114,9 @@ body {
 @media (max-width: 600px) {
   .home-return-prefix { right: auto; left: 0; top: -24px; }
 }
+
+.thought h2 a:focus-visible, .thought-back-link:focus-visible { outline: 1px solid #777; outline-offset: 4px; }
+.thought-back-link { position: relative; display: inline-flex; align-items: center; min-height: 44px; margin: -12px 0; font-size: 14px; }
+.thought-back-arrow { position: absolute; right: calc(100% + 8px); top: 50%; transform: translateY(-50%); opacity: 0; transition: opacity 250ms ease-in-out, transform 250ms ease-in-out; }
+.thought-back-link:hover .thought-back-arrow, .thought-back-link:focus-visible .thought-back-arrow { opacity: 1; transform: translate(-2px, -50%); }
+.thought-page-title { font-size: 14px; font-weight: 400; line-height: 2; }

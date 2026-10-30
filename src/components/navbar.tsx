@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname().replace(/\/$/, "") || "/";
-  const showFourthPage = pathname === "/thoughts" || pathname === "/christina";
+  const isThoughts = pathname === "/thoughts" || pathname.startsWith("/thoughts/");
+  const showFourthPage = isThoughts || pathname === "/christina";
 
   return (
     <div data-return-reveal className="number-navigation flex flex-row">
@@ -25,8 +26,8 @@ export default function Navbar() {
       </Link>
       <Link
         href="/thoughts"
-        aria-current={pathname === "/thoughts" ? "page" : undefined}
-        className={`cursor-pointer text-sm p-2 site-link nav-link ${pathname === '/thoughts' ? 'site-link-active' : ''}`}
+        aria-current={isThoughts ? "page" : undefined}
+        className={`cursor-pointer text-sm p-2 site-link nav-link ${isThoughts ? 'site-link-active' : ''}`}
       >
         <p>3</p>
       </Link>

@@ -9,7 +9,7 @@ export default function SwipeNavigation({ children }: { children: React.ReactNod
   const router = useRouter();
   const pathname = usePathname().replace(/\/$/, "") || "/";
 
-  const getCurrentIndex = () => routes.indexOf(pathname);
+  const getCurrentIndex = () => routes.indexOf(pathname.startsWith("/thoughts/") ? "/thoughts" : pathname);
 
   const handlers = useSwipeable({
     onSwipedLeft: () => {
