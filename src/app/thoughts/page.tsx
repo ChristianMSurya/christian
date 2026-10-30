@@ -5,11 +5,6 @@ import Footer from '@/components/footer';
 
 const thoughts = [
   {
-    title: 'second thought',
-    date: 'october 29, 2026',
-    paragraphs: ["can't wait to get more done tomorrow"],
-  },
-  {
     title: 'first thought',
     date: 'october 29, 2026',
     paragraphs: ['looking forward to getting sleep'],
