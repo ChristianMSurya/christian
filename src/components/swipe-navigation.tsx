@@ -3,7 +3,7 @@
 import { useSwipeable } from 'react-swipeable';
 import { useRouter, usePathname } from 'next/navigation';
 
-const routes = ['/', '/work', '/writing'];
+const routes = ['/', '/work', '/thoughts', '/christina'];
 
 export default function SwipeNavigation({ children }: { children: React.ReactNode }) {
   const router = useRouter();
