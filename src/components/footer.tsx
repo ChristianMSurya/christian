@@ -12,7 +12,7 @@ export default function Footer() {
         linkedin
         <ArrowUpRight aria-hidden="true" className="absolute left-full -top-2.5 h-3 w-3 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition group-hover:translate-y-[-2px] group-hover:translate-x-[2px] duration-[250ms] ease-in-out" />
       </a>
-      {' '}
+      {' / '}
       <a
         href="https://x.com/christianmsurya"
         target="_blank"
