@@ -16,7 +16,7 @@ export default function Work() {
       name: "firefly",
       details: "cofounder / mar 2024 - nov 2024",
       description: "",
-      link: "https://www.tryfirefly.ai"
+      link: "https://www.linkedin.com/company/askscoutpoweredbyvinly/home/"
     },
     {
       name: "commsor",
@@ -28,7 +28,7 @@ export default function Work() {
       name: "subset",
       details: "growth / jan 2023 - may 2023",
       description: "",
-      link: "https://subset.so"
+      link: "https://rogo.com/news/rogo-acquires-subset"
     },
     {
       name: "gather",
@@ -40,7 +40,7 @@ export default function Work() {
       name: "frontida records",
       details: "head of marketing / sep 2021 - sep 2022",
       description: "",
-      link: "https://www.frontidarecords.org"
+      link: "https://www.linkedin.com/company/frontida-records/posts/"
     },
     {
       name: "genunity",
