@@ -4,19 +4,19 @@ import ScreenshotLink from '@/components/screenshot-link';
 
 const profiles = {
   dasha: { name: 'dasha', url: 'https://www.linkedin.com/in/dasha-kudriavtseva/' },
-  george: { name: 'george', url: 'https://www.linkedin.com/in/george-xue/' },
+  george: { name: 'george xue', url: 'https://www.linkedin.com/in/george-xue/' },
   ryan: { name: 'ryan wei', url: 'https://www.linkedin.com/in/ryanswei/' },
-  ivan: { name: 'ivan', url: 'https://www.linkedin.com/in/ivanzhangku/' },
+  ivan: { name: 'ivan zhang', url: 'https://www.linkedin.com/in/ivanzhangku/' },
   lauren: { name: 'lauren', url: 'https://www.linkedin.com/in/lauren-sinsioco/' },
   tanya: { name: 'tanya', url: 'https://www.linkedin.com/in/tanyapattani/' },
   william: { name: 'william', url: 'https://www.linkedin.com/in/william-kim-6b1b851b9/' },
   ronak: { name: 'ronak', url: 'https://www.linkedin.com/in/ronakshah01/' },
-  max: { name: 'max', url: 'https://www.linkedin.com/in/maxkan/' },
+  max: { name: 'max kan', url: 'https://www.linkedin.com/in/maxkan/' },
   joey: { name: 'joey jin', url: 'https://www.linkedin.com/in/joeyjin/' },
 };
 
 const messages = [
-  { image: 'joey-jin', profiles: [profiles.joey, profiles.max], width: 634, height: 166, text: 'joey jin: christina' },
+  { image: 'joey-jin', profiles: [profiles.max, profiles.joey], width: 634, height: 166, text: 'joey jin: christina' },
   { image: '02', profiles: [profiles.william], width: 630, height: 208, text: 'robert do you want to hang out tomorrow with me and christina' },
   { image: 'ronak-shah', profiles: [profiles.ronak], width: 628, height: 144, text: 'ronak shah: oh christina' },
   { image: 'tanya-2020', profiles: [profiles.tanya], width: 628, height: 140, text: 'no you don’t know christina' },
