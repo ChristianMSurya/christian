@@ -13,6 +13,7 @@ const profiles = {
   ronak: { name: 'ronak', url: 'https://www.linkedin.com/in/ronakshah01/' },
   max: { name: 'max kan', url: 'https://www.linkedin.com/in/maxkan/' },
   joey: { name: 'joey jin', url: 'https://www.linkedin.com/in/joeyjin/' },
+  bren: { name: 'bren mathew', url: 'https://www.linkedin.com/in/bren-mathew-3a6371169/' },
 };
 
 const messages = [
@@ -29,6 +30,7 @@ const messages = [
   { image: '10', profiles: [profiles.dasha], width: 628, height: 170, text: 'omg pls stop christina' },
   { image: '11', profiles: [profiles.dasha], width: 636, height: 166, text: 'you and christina included man' },
   { image: 'narinder-2025', width: 624, height: 158, text: 'christina can you call me asap' },
+  { image: 'bren-mathew', profiles: [profiles.bren], width: 702, height: 128, text: 'bren mathew: dudes are going crazy behind you christina' },
 ];
 
 export default function Christina() {
